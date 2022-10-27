@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAYMENT FORM</title>
+    <style>
+      h1 {
+        background-color: skyblue;
+        font-style: italic;
+        text-align: center;
+        color: lightsalmon;
+      }
+      fieldset {
+        background-color: #ccc;
+        padding: 20px;
+        margin: 10px;
+        width: 200 px;
+      }
+      body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px 30px;
+
+      }
+      input[type="submit"]{
+        background-color: rgb(50, 241, 7);
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        height: 10%;
+        border: none;
+        border-radius: 10px;
+        size: 40px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="password"],
+      input[type="date"],
+      select,
+      textarea{
+        width: 100%;
+      }
+      input[type="submit"]:hover{
+        background-color: rgb(14, 26, 163);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PAYMENT FORM</h1>
+    <fieldset>
+      <h2> PERSONAL INFORMATION </h2>
+      <form action="">
+        <p>NAME: <input type="text" name="ENTER YOUR NAME " required placeholder="ENTER YOUR NAME" /></p>
+        <p>
+          GENDER:
+          <select name="GENDER" id="GENDE" required>
+            <option>SELET YOUR GENDER</option>
+            <option>MALE</option>
+            <option>FEMAL</option>
+            <option>OTHER</option>
+          </select>
+        </p>
+        <p>
+          Address:
+          <textarea name=" Address" id="Address" cols="55" rows="7" placeholder="ENTER YOUR ADDRESS"></textarea>
+        </p>
+        <p>Email: <input type="email" name="Email" id="Email" required placeholder="ENTER YOUR EMAIL" /></p>
+        <p>
+          Pincode: <input type="number" name="number" id="number" required placeholder="ENTER YOUR PINCODE" />
+        </p>
+        <h2>PAYMENT INFORMATION</h2>
+        <p>
+          CARD TYPE:
+          <select name="CARD TYPE" id="CARD TYPE" required placeholder="CHOSE YOUR CARD TYPE">
+            <option>--SELECT YOUR CARD TYPE--</option>
+            <option>RUPAY</option>
+            <option>VISA</option>
+            <option>MASTER CARD</option>
+          </select>
+        </p>
+        <p>
+          PIN NUMBER <input type="number" name="number" id="number" required placeholder="ENTER YOUR PIN NUMBER" />
+        </p>
+        <p>
+          CVV: <input type="password" name="password" id="password" required placeholder="ENTER YOUR CVV " />
+        </p>
+        <p>Expire Date: <input type="date" name="date" id="date" required /></p>
+        <input
+          type="submit"
+          value=" PAY NOW"
+          id="subit"
+        />
+      </form>
+    </fieldset>
+  </body>
+</html>

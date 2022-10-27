@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <style>
+        h1{
+            text-align: center;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            size: 30px;
+        }
+        fieldset{
+            padding: 5px;
+            margin: auto;
+            background-color: #cccc;
+            width: 70%;
+        }
+        input[type ="submit"]{
+            background-color: blue;
+            color: white;
+            border: non;
+            border-radius: 5px;
+            float: right;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="Email"],
+        input[type="date"],
+        textarea,
+        select{
+            width: 100%;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(42, 236, 42);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        
+    <h1> Reservation Form </h1>
+    <fieldset>
+    <p> Name <input type="text" id="ENTER YOUR NAME" required placeholder="ENTER YOUR NAME" /></p>
+    <p> Email <input type="email" id="ENTER YOUR NAMe" required placeholder="ENTER YOUR NAME" /></p>
+    <p>Room type
+        <select name="ROOM" id="ROOM" required>
+            <option>--SELECT YOUR ROOM--</option>
+            <option>1 BHK WITH AC</option>
+            <option>1 BHK NON AC</option>
+            <option>2BHK WITH AC</option>
+            <option>2BHK NON AC</option>
+         </select>
+    </p>
+    <p> Arrival Date <input type="date" name="ARRIVAL DATE" id="Arrival Date" required placeholder="Arrival Date" /></p>
+    <p> Departure Date  <input type="date" name="Departure Date" required placeholder="departure date" /></p>
+    <p> Number of Guests <input type="number" name="Number of guests" id="Number of guests" required placeholder="Number of guests" /></p>
+    <p> Free pickup 
+        <select>
+          <option> yes</option>
+          <option>No</option>
+        </select> 
+    </p>
+    <p> Flight Number <input type="number" name="Flight number" id="Flight number" required placeholder="Enter your Number " /></p>
+    <input type="submit" name="submit" id="submit" value="submit" />
+    </fieldset> 
+</form>   
+</body>
+</html>
